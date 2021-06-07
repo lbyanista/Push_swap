@@ -6,7 +6,7 @@
 #    By: mlabrayj <mlabrayj@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/05 15:20:10 by mlabrayj          #+#    #+#              #
-#    Updated: 2021/06/07 12:22:41 by mlabrayj         ###   ########.fr        #
+#    Updated: 2021/06/07 12:25:58 by mlabrayj         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ SRC =	push_swap.c 	\
 		ft_isnumber.c	\
 		
 
-FLAGS = -g #-Wall -Wextra -Werror
+FLAGS = -g -Wall -Wextra -Werror
 
 all: $(NAME)
 
