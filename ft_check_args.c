@@ -6,34 +6,11 @@
 /*   By: mlabrayj <mlabrayj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/08 08:39:35 by mlabrayj          #+#    #+#             */
-/*   Updated: 2021/06/08 10:25:58 by mlabrayj         ###   ########.fr       */
+/*   Updated: 2021/06/08 14:43:06 by mlabrayj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
-void    ft_is_multy(int ac, char **av)
-{
-    int	i;
-	int	j;
-
-	j = 1;
-	i = 1;
-	while (i < ac - 1)
-	{
-		j = i + 1;
-		while (j < ac)
-		{
-			if (!ft_strcmp(av[i], av[j]))
-			{
-				write(1, "Error\n", 6);
-				exit(1);
-			}
-			j++;
-		}
-		i++;
-	}
-}
 
 void    ft_is_int(int ac, char **av)
 {
@@ -58,10 +35,33 @@ void    ft_is_int(int ac, char **av)
 	}
 }
 
+void    ft_is_duplicates(int ac, char **av)
+{
+    int	i;
+	int	j;
+
+	j = 1;
+	i = 1;
+	while (i < ac - 1)
+	{
+		j = i + 1;
+		while (j < ac)
+		{
+			if (!ft_strcmp(av[i], av[j]))
+			{
+				write(1, "Error\n", 6);
+				exit(1);
+			}
+			j++;
+		}
+		i++;
+	}
+}
+
 void    ft_check_args(int ac, char **av)
 {
     ft_isnumber(ac, av);
-	ft_is_multy(ac, av);
+	ft_is_duplicates(ac, av);
 	ft_is_int(ac, av);
 }
 

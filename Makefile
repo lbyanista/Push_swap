@@ -6,7 +6,7 @@
 #    By: mlabrayj <mlabrayj@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/05 15:20:10 by mlabrayj          #+#    #+#              #
-#    Updated: 2021/06/08 10:37:08 by mlabrayj         ###   ########.fr        #
+#    Updated: 2021/06/08 14:35:24 by mlabrayj         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,13 @@ SRC =	push_swap.c 	\
 		ft_check_args.c \
 		ft_strcmp.c		\
 		ft_strlen.c		\
+		ft_is_sorted.c	\
+		operations.c	\
+		rembile_a.c		\
+		sort_table.c 	\
+		sorting.c 		\
+		sorting_a.c 	\
+		push_a_b.c		\
 		
 
 FLAGS = -g -Wall -Wextra -Werror

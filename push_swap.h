@@ -6,7 +6,7 @@
 /*   By: mlabrayj <mlabrayj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/05 15:37:45 by mlabrayj          #+#    #+#             */
-/*   Updated: 2021/06/08 10:43:16 by mlabrayj         ###   ########.fr       */
+/*   Updated: 2021/06/08 14:37:46 by mlabrayj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,4 +35,21 @@ int 	ft_strlen(char *str);
 int		ft_strcmp(char *s1, char *s2);
 void    ft_check_args(int ac, char **av);
 int		ft_strcmp(char *s1, char *s2);
+void	sorting_a(t_stack *s);
+void	rembil_a(t_stack *s, int ac, char **av);
+int		ft_is_sorted(int *table, int len);
+void	sa(t_stack *s);
+void	sorthree(t_stack *s);
+void	sortfour(t_stack *s, int i);
+void	sortfive(t_stack *s, int i);
+void	sort_table(int ac, t_stack *s);
+void	ra(t_stack *s);
+void	rra(t_stack *s);
+int		pb(t_stack *s);
+void	pa(t_stack *s);
+void	pushb(t_stack *s, int start, int end);
+void	pusha(t_stack *s);
+void	rrb(t_stack *s);
+void	rb(t_stack *s);
+void	rotate_a(t_stack *s, int i, int j);
 #endif
