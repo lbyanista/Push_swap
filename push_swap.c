@@ -6,7 +6,7 @@
 /*   By: mlabrayj <mlabrayj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/05 15:29:05 by mlabrayj          #+#    #+#             */
-/*   Updated: 2021/06/08 14:57:42 by mlabrayj         ###   ########.fr       */
+/*   Updated: 2021/06/08 20:28:46 by mlabrayj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	main(int ac, char **av)
 {
-	t_stack s;
+	t_stack	s;
 
 	if (ac > 1)
 	{
@@ -28,21 +28,19 @@ int	main(int ac, char **av)
 		rembil_a(&s, ac, av);
 		if (ft_is_sorted(s.stack_a, s.topa))
 			return (0);
-		printf("\n%d\n", ac);
-		if(ac == 3)
+		if (ac == 3)
 			sa(&s);
-		if(ac == 4)
+		if (ac == 4)
 			sorthree(&s);
-		if(ac == 5)
+		if (ac == 5)
 			sortfour(&s, 0);
-		if(ac == 6)
+		if (ac == 6)
 			sortfive(&s, 0);
 		else
 			sorting_a(&s);
 		free(s.stack_a);
 		free(s.stack_b);
 		free(s.table);
-		printf("hh\n\n");
 		return (0);
 	}
 	else

@@ -6,7 +6,7 @@
 /*   By: mlabrayj <mlabrayj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/05 15:37:45 by mlabrayj          #+#    #+#             */
-/*   Updated: 2021/06/08 14:37:46 by mlabrayj         ###   ########.fr       */
+/*   Updated: 2021/06/08 20:29:39 by mlabrayj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,19 +21,19 @@ typedef struct s_stack
 {
 	int	*stack_a;
 	int	*stack_b;
-	int topa;
-	int topb;
-	int *table;
-	int table_len;
+	int	topa;
+	int	topb;
+	int	*table;
+	int	table_len;
 }				t_stack;
 
 void	push_swap(int ac, char **av);
 long	ft_atoi(char *c);
 int		ft_isdigit(int c);
 void	ft_isnumber(int ac, char **av);
-int 	ft_strlen(char *str);
+int		ft_strlen(char *str);
 int		ft_strcmp(char *s1, char *s2);
-void    ft_check_args(int ac, char **av);
+void	ft_check_args(int ac, char **av);
 int		ft_strcmp(char *s1, char *s2);
 void	sorting_a(t_stack *s);
 void	rembil_a(t_stack *s, int ac, char **av);
