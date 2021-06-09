@@ -31,8 +31,8 @@ RELATIVE_PATH = r'push_swap'
 
 class PsGui:
     def __init__(self, master):
-        ww = 600
-        wh = 600
+        ww = 1512
+        wh = 1512
         self.i = 0
         self.speed = 0
         dirname = os.path.dirname(os.path.abspath(__file__))

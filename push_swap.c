@@ -6,7 +6,7 @@
 /*   By: mlabrayj <mlabrayj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/05 15:29:05 by mlabrayj          #+#    #+#             */
-/*   Updated: 2021/06/09 18:07:23 by mlabrayj         ###   ########.fr       */
+/*   Updated: 2021/06/09 18:36:46 by mlabrayj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,6 @@ int	main(int ac, char **av)
 		return (0);
 	}
 	else
-		write(1, "enter one or more arguments\n", 28);
+		write(1, "Error\n", 6);
 	return (0);
 }
