@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rembile_a.c                                        :+:      :+:    :+:   */
+/*   filling_a.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mlabrayj <mlabrayj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/08 14:15:36 by mlabrayj          #+#    #+#             */
-/*   Updated: 2021/06/08 20:30:14 by mlabrayj         ###   ########.fr       */
+/*   Updated: 2021/06/09 17:59:42 by mlabrayj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	rembil_a(t_stack *s, int ac, char **av)
+void	filling_a(t_stack *s, int ac, char **av)
 {
 	int	i;
 	int	j;

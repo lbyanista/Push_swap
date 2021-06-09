@@ -6,7 +6,7 @@
 /*   By: mlabrayj <mlabrayj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/05 15:37:45 by mlabrayj          #+#    #+#             */
-/*   Updated: 2021/06/08 20:29:39 by mlabrayj         ###   ########.fr       */
+/*   Updated: 2021/06/09 18:02:11 by mlabrayj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define PUSH_SWAP_H
 # include <stdlib.h>
 # include <unistd.h>
-# include <stdio.h>
+// # include <stdio.h>
 # include <string.h>
 
 typedef struct s_stack
@@ -36,7 +36,7 @@ int		ft_strcmp(char *s1, char *s2);
 void	ft_check_args(int ac, char **av);
 int		ft_strcmp(char *s1, char *s2);
 void	sorting_a(t_stack *s);
-void	rembil_a(t_stack *s, int ac, char **av);
+void	filling_a(t_stack *s, int ac, char **av);
 int		ft_is_sorted(int *table, int len);
 void	sa(t_stack *s);
 void	sorthree(t_stack *s);
