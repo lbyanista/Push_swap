@@ -6,7 +6,7 @@
 /*   By: mlabrayj <mlabrayj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/05 15:29:05 by mlabrayj          #+#    #+#             */
-/*   Updated: 2021/06/09 12:36:28 by mlabrayj         ###   ########.fr       */
+/*   Updated: 2021/06/09 15:33:03 by mlabrayj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ void	free_stack(t_stack s)
 int	main(int ac, char **av)
 {
 	t_stack	s;
-
+	
 	if (ac > 1)
 	{
 		ft_check_args(ac, av);
@@ -55,11 +55,11 @@ int	main(int ac, char **av)
 			return (0);
 		if (ac == 3)
 			sa(&s);
-		if (ac == 4)
+		else if (ac == 4)
 			sorthree(&s);
-		if (ac == 5)
+		else if (ac == 5)
 			sortfour(&s, 0);
-		if (ac == 6)
+		else if (ac == 6)
 			sortfive(&s, 0);
 		else
 			sorting_a(&s);
