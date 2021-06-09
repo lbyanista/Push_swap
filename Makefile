@@ -6,7 +6,7 @@
 #    By: mlabrayj <mlabrayj@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/05 15:20:10 by mlabrayj          #+#    #+#              #
-#    Updated: 2021/06/08 14:35:24 by mlabrayj         ###   ########.fr        #
+#    Updated: 2021/06/09 12:21:54 by mlabrayj         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,8 @@ SRC =	push_swap.c 	\
 		ft_strcmp.c		\
 		ft_strlen.c		\
 		ft_is_sorted.c	\
-		operations.c	\
+		operations_a.c	\
+		operations_b.c	\
 		rembile_a.c		\
 		sort_table.c 	\
 		sorting.c 		\
