@@ -6,7 +6,7 @@
 #    By: mlabrayj <mlabrayj@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/05 15:20:10 by mlabrayj          #+#    #+#              #
-#    Updated: 2021/06/09 18:06:57 by mlabrayj         ###   ########.fr        #
+#    Updated: 2021/06/09 20:02:26 by mlabrayj         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,12 +29,12 @@ SRC =	push_swap.c 	\
 		push_a_b.c
 
 
-FLAGS = -g -Wall -Wextra -Werror
+FLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
 
 $(NAME): $(SRC)
-		@gcc $(SRC) $(FLAGS) -fsanitize=address -o $(NAME)
+		@gcc $(SRC) $(FLAGS) -o $(NAME)
 
 clean:
 	@rm -rf $(NAME) *.dSYM
