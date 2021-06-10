@@ -6,7 +6,7 @@
 /*   By: mlabrayj <mlabrayj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/08 08:39:35 by mlabrayj          #+#    #+#             */
-/*   Updated: 2021/06/09 19:53:18 by mlabrayj         ###   ########.fr       */
+/*   Updated: 2021/06/10 09:45:40 by mlabrayj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,14 @@ void	ft_is_int(int ac, char **av)
 	i = 1;
 	while (i < ac)
 	{
-		if ((av[i][0] != '-' && ft_strlen(av[i]) > 10) ||
+		if ((av[i][0] != '-' && ft_strlen(av[i]) > 10) || \
 			((av[i][0] != '-') && ft_strlen(av[i]) == 10
 			&& ft_strcmp(av[i], "2147483647") > 0))
 		{
 			write(1, "Error\n", 6);
 			exit(1);
 		}
-		if ((av[i][0] == '-' && ft_strlen(av[i]) > 11) ||
+		if ((av[i][0] == '-' && ft_strlen(av[i]) > 11) || \
 		 	((av[i][0] == '-') && ft_strlen(av[i]) == 11
 			&& ft_strcmp(av[i], "-2147483648") > 0))
 		{
